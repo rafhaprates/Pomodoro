@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background: #333853;
+    color: #9FA1AE;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3rem 0;
+}
+
+body header {
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+}
+body header h1 {
+    font-size: 40px;
+}
+
+.button {
+    width: 100px;
+    height: 50px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    background: #3C4262;
+    color: #9FA1AE;
+
+    border-radius: 5px;
+
+    border: 0;
+    outline: none;
+
+    box-shadow: 0px 1px 0px 1px #2e2f35;
+}
+
+.button:active {
+    box-shadow: inset 0px 1px 8px 1px #1e202e;
+}
+
+main {
+    width: 95vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .counter {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    background: #3C4262;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .watch-alert {
+    position: fixed;
+
+    width: 180px;
+    height: 180px;
+    border-radius: 150px;
+
+    border: 5px solid #FFFFFF;
+}
+
+main .work {
+    border: 5px solid #26c720de;
+}
+
+main .break {
+    border: 5px solid #e5ff00de;
+}
+
+main .counter h1 {
+    font-size: 50px;
+}
+
+main .description {
+    height: 20vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main .description h1 {
+    font-size: 30px;
+}
+
+main .task-work {
+    color: #26c720de;
+}
+
+main .task-break {
+    color: #e5ff00de;
+}
+
+main .description .session-indicator {
+    max-width: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .description .session-indicator .indicator {
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+
+    background: #3C4262;
+
+    margin: 0 1px;
+}
+
+main .description .session-indicator .indicator-work {
+    background-color: #26c720de;
+}
+
+main .description .session-indicator .indicator-break {
+    background-color: #e5ff00de;
+}
+
+main .description .button-start-pause button {
+    width: 70px;
+    height: 70px;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    background: #3C4262;
+    color: #9FA1AE;
+
+    border-radius: 5px;
+
+    border: 0;
+    outline: none;
+
+    box-shadow: 0px 1px 0px 1px #2e2f35;
+}
+
+main .description .button-start-pause button:active {
+    box-shadow: inset 0px 1px 8px 1px #1e202e;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1rem;
+}
+
+footer .contacts a {
+    text-decoration: none;
+    color: #9FA1AE;
+
+    font-size: 30px;
+
+    margin: 0 0.2rem;
+}
+
+footer .contacts a:hover {
+    color: #898b96;
+}
+
+.hearth {
+    color: red;
+    font-size: 30px;
+}
+
+@media (min-width: 500px) {
+    body header {
+        width: 70%;
+    }
+
+    body header h1 {
+        font-size: 50px;
+    }
+
+    main {
+        width: 500px;
+    }
+
+    main .counter {
+        width: 300px;
+        height: 300px;
+    }
+
+    main .watch-alert {
+        width: 250px;
+        height: 250px;
+    }
+
+    main .description {
+        height: 60%;
+    }
+    
+    main .description h1 {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background: #333853;
+    color: #9FA1AE;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3rem 0;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.title {
+    font-size: 50px;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#root .configurations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding-bottom: 2rem;
+}
+
+#root .configurations .config-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0.5rem;
+}
+
+#root .configurations .config-block .number-config {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#root .configurations .config-block .number-config .arrows .arrow {
+    width: 30px;
+    height: 30px;
+
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+
+    background: #7a7d8f;
+    color: #333853;
+
+    transition: 0.3s;
+}
+
+#root .configurations .config-block .number-config .arrows .arrow:first-child {
+    margin-bottom: 10px;
+}
+
+#root .configurations .config-block .number-config .arrows .arrow:hover {
+    background: #8e909c;
+}
+
+#root .configurations .config-block .number-config .number {
+    width: 140px;
+    height: 120px;
+
+    font-size: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: #3C4262;
+    color: #9FA1AE;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 1px 0px 1px #2e2f35;
+
+    margin-left: 1rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+}
+
+.button {
+    width: 100px;
+    height: 50px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    background: #3C4262;
+    color: #9FA1AE;
+
+    border-radius: 5px;
+
+    border: 0;
+    outline: none;
+
+    box-shadow: 0px 1px 0px 1px #2e2f35;
+}
+
+.button:active {
+    box-shadow: inset 0px 1px 8px 1px #1e202e;
+}
+
+.button-large {
+    width: 200px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1rem;
+}
+
+footer .contacts a {
+    text-decoration: none;
+    color: #9FA1AE;
+
+    font-size: 30px;
+
+    margin: 0 0.2rem;
+}
+
+footer .contacts a:hover {
+    color: #898b96;
+}
+
+.hearth {
+    color: red;
+    font-size: 30px;
+}
+
+@media (min-width: 900px) {
+    #root .configurations {
+        flex-direction: row;
+    }
+}

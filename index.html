@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Pomodoro</title>
+</head>
+<body>
+    <header>
+        <img src="src/img/logo_1.png" alt="Técnica Pomodoro" width="400" id="logo">
+        <h1 class="title">Pomodoro</h1>  
+    </header>
+    <main id="root">
+        <div class="configurations">
+            <div class="config-block">
+                <div class="number-config">
+                    <div class="arrows">
+                        <div class="arrow">
+                            <i class="fa fa-arrow-up" id="arrowUpJob"></i>
+                        </div>
+                        <div class="arrow">
+                            <i class="fa fa-arrow-down" id="arrowDownJob"></i>
+                        </div>
+                    </div>
+
+                    <div class="number">
+                        <h2 id="workingNumber">25</h2>
+                    </div>
+                </div>
+                            
+                <div class="description">
+                    <h3>Trabalho</h3>
+                </div>
+            </div>
+            <div class="config-block">
+                <div class="number-config">
+                    <div class="arrows">
+                        <div class="arrow">
+                            <i class="fa fa-arrow-up" id="arrowUpPause"></i>
+                        </div>
+                        <div class="arrow">
+                            <i class="fa fa-arrow-down" id="arrowDownPause"></i>
+                        </div>
+                    </div>
+
+                    <div class="number">
+                        <h2 id="breakNumber">5</h2>
+                    </div>
+                </div> 
+
+                <div class="description">
+                    <h3>Pausa</h3>
+                </div>
+            </div>
+            <div class="config-block">
+                <div class="number-config">
+                    <div class="arrows">
+                        <div class="arrow">
+                            <i class="fa fa-arrow-up" id="arrowUpSection"></i>
+                        </div>
+                        <div class="arrow">
+                            <i class="fa fa-arrow-down" id="arrowDownSection"></i>
+                        </div>
+                    </div>
+
+                    <div class="number">
+                        <h2 id="sessionNumber">3</h2>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h3>Sessões</h3>
+                </div>
+            </div>
+        </div>
+
+        <input class="button button-large" type="button" value="Continuar" onclick="createPomodoro()" />
+    </main>
+    <footer>
+        <span>Developed by Rafhael Prates <i class=""></i></span>
+
+        <div class="contacts">
+            <a href="https://github.com/rafhaprates" target="_blanked">
+                <i class="fa fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rafhaelprates/" target="_blanked">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>

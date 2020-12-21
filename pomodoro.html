@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/pomodoro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Pomodoro</title>
+</head>
+<body>
+    <header>
+        <img src="src/img/logo_1.png" alt="Técnica Pomodoro" width="400" id="logo">
+        <h1 class="title">Pomodoro</h1>  
+        <input type="button" class="button" value="Inicio" onclick="redirectToHome()" >
+    </header>
+    <main>
+        <section class="counter">
+            <div class="watch">
+                <h1 id="timer"></h1>
+            </div>
+            <div class="watch-alert work" id="watchAlert"></div>
+        </section>
+        <section class="description">
+            <h1 id="task" class="task-work">Trabalho</h1>
+            <section class="session-indicator" id="sessionIndicator"></section>
+            <section class="button-start-pause" id="buttonStartPause">
+                <button onclick="playPomodoro()">
+                    <i class="fa fa-play"></i>
+                </button>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <span>Developed by Rafhael Prates <i class=""></i></span>
+
+        <div class="contacts">
+            <a href="https://github.com/rafhaprates" target="_blanked">
+                <i class="fa fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rafhaelprates/" target="_blanked">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="main.js"></script>
+<script>
+    window.onload = generatePomodoro()
+</script>
+</html>
